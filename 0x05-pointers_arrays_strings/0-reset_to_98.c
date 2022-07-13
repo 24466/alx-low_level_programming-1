@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h>
-
+/**
+ * reset_to_98 - resets the pointer value of int to 98
+ * @*n:parameter in function
+ * retun:nothing
+ */
 void reset_to_98(int *n)
 {
-	int *n;
-
-	n = 98;
-
-	return 0;
+	*n = 98;
 }
 	
