@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *_memset - fuction that fills n with b pointed to by s
  * @s: is a charachter pointer varible
