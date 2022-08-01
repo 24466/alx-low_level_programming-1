@@ -1,17 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - Prints numbers between 0 to 9.
- *
- * Return: Always 0 (Success)
+ * main - print out numbers of base 10
+ * Return: alway 0 (sucess)
  */
 int main(void)
 {
-	int i;
+	int n[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+	int j;
 
-	for (i = 48; i < 58; i++)
+	for (j = 0; j < 10; j++)
 	{
-		putchar(i);
+		putchar(n[j]);
 	}
 	putchar('\n');
 	return (0);
