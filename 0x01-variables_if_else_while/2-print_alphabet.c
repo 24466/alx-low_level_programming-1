@@ -1,18 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - the function prints lowercase alphabet using putchar
- * @n: this is an integer containning the limit or maximum number
- * Return: return nothing as aslways
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n = 97;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (n <= 122)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(n);
-		n++;
+		putchar(alp[i]);
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
