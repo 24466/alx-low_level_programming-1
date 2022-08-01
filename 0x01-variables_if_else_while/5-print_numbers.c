@@ -1,18 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - Prints numbers from 0 to 9.
- *
- * Return: Always 0 (Success)
+ * main - print out numbers of base 10
+ * Return: alway 0 (sucess)
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 0; i < 10; i++)
+	for (n = 0; n < 10; n++)
 	{
-		printf("%d", i);
+		printf("%d", n);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
