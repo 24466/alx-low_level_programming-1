@@ -15,9 +15,9 @@ int _abs(int a)
 		b = abs(a);
 		printf("%d\n", b);
 	}
-	else if (a >= 0)
+	else
 	{
-		printf("%d\n", a);
+		return (a);
 	}
 	return (0);
 }
