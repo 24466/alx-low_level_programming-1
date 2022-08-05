@@ -13,7 +13,7 @@ int _abs(int a)
 	if (a < 0)
 	{
 		b = abs(a);
-		printf("%d\n", b);
+		return (b);
 	}
 	else
 	{
