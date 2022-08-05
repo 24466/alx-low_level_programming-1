@@ -2,12 +2,10 @@
 /**
  * _islower - checks for lowercase character
  * @c: integer variable to checked
- * Return: Always 0 (sucess)
+ * Return: 1 or 0 depending on the condition
  */
 int _islower(int c)
 {
-	int c;
-
 	if (c >= 97 && c < 123)
 	{
 		return (1);
@@ -16,5 +14,5 @@ int _islower(int c)
 	{
 		return (0);
 	}
-	Return (0);
+	return (0);
 }
