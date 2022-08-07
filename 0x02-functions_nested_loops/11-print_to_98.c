@@ -3,7 +3,7 @@
 /**
  * print_to_98 - prints 0 to 98 seperated by commas
  * @n: integer variable
- * Return: always 0 (sucess)
+ * Return: nothing
  */
 void print_to_98(int n)
 {
@@ -13,5 +13,4 @@ void print_to_98(int n)
 		printf(",");
 		printf(" ");
 	}
-	return (n);
 }
