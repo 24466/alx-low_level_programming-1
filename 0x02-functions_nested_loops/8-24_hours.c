@@ -3,11 +3,11 @@
 /**
  * jack_bauer - prints every minute of the day
  *
- * Return: always 0 (sucess)
+ * Return: nothing
  */
 void jack_bauer(void)
 {
-	int a, b, c;
+	int a, b;
 
 	for (a = 0; a <= 24; a++)
 	{
@@ -17,5 +17,5 @@ void jack_bauer(void)
 		}
 		printf("\n");
 	}
-	return (0);
+
 }
