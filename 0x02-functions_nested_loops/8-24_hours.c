@@ -1,41 +1,38 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * jack_bauer - prints every minute of the day
- *
- * Return: nothing
- */
+* jack_bauer -> prints 24 hours
+*/
 void jack_bauer(void)
 {
-	int a, b;
+	int i, j;
 
-	for (a = 0; a <= 24; a++)
+	for (i = 0; i < 24; i++)
 	{
-		for (b = 0; b <= 60; b++)
+		for (j = 0; j < 60; j++)
 		{
-			if (a < 10)
+			if (i < 10)
 			{
-				printf("0");
-				printf(a + 0);
+				_putchar('0');
+				_putchar(i + '0');
 			}
-			else if (a >= 10)
+			else if (i >= 10)
 			{
-				printf((a / 10) + 0);
-				printf((a % 10) + 0);
+				_putchar((i / 10) + '0');
+				_putchar((i % 10) + '0');
 			}
-			if (b < 10)
+			if (j < 10)
 			{
-				printf(":");
-				printf("0");
-				printf(b + '0');
+				_putchar(':');
+				_putchar('0');
+				_putchar(j + '0');
 			}
-			else if (b >= 10)
+			else if (j >= 10)
 			{
-				printf(":");
-				printf((j / 10) + "0");
-				printf((j % 10) + "0");
+				_putchar(':');
+				_putchar((j / 10) + '0');
+				_putchar((j % 10) + '0');
 			}
-			printf("\n");
+			_putchar('\n');
 		}
 
 	}
