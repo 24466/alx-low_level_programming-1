@@ -15,7 +15,6 @@ void jack_bauer(void)
 		{
 			printf("%d:%d", a, b);
 		}
-		printf("\n");
 	}
-
+	printf("\n");
 }
