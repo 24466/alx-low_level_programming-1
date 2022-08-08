@@ -1,26 +1,32 @@
 #include <stdio.h>
 #include "main.h"
+
+
 /**
- * print_to_98 - prints 0 to 98 seperated by commas
- * @n: integer variable
- * Return: nothing
- */
+* print_to_98 - prints to 98
+* @n: the starting point
+*/
 void print_to_98(int n)
 {
-
-	for (n = 0; n <= 98; n++)
+	if (n <= 98)
 	{
-		if (n >= 0)
+		while (n <= 98)
 		{
-			printf("%d", n);
-			printf(",");
-			printf(" ");
+			if (n == 98)
+				printf("%d\n", n);
+			else
+				printf("%d, ", n);
+			n = n + 1;
 		}
-		else if (n >= 98)
+	} else if (n > 98)
+	{
+		while (n >= 98)
 		{
-			printf("%d", n);
+			if (n == 98)
+				printf("%d\n", n);
+			else
+				printf("%d, ", n);
 			n = n - 1;
-
 		}
 	}
 }
