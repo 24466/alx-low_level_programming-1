@@ -1,17 +1,23 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
-*print_line - prints a straight line
-*@n: parameter
-*Return:returns nothing
-*/
-
+ * print_line - prints a line depending on n times
+ * @n: input value
+ * Reuturn: nothing
+ */
 void print_line(int n)
 {
-	while (n-- > 0)
+	int x = 95;
+
+	for (n =  0; n <= 10; n++)
 	{
-		putchar('_');
+		if (n <= 0)
+		{
+			_putchar('\n');
+		}
+		else if (n > 0)
+		{
+			_putchar(x);
+		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }
