@@ -1,19 +1,17 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 /**
- * _memcpy - fuction copies contentes of src to dest n times
- * @src: char pointer destination of source of data to be copied
- * @dest: char pointer array where data to be stored
- * @n: the number of times to be copied
- * Return: pointer to dest
+ * _memcpy - copies memory area,
+ * @dest: destination memory area.
+ * @src: source memory area.
+ * @n: bytes filled.
+ * Return: the pointer to dest.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-	{
-		*(dest + i) = *(src + i);
-	}
+		*(dest + i) =  *(src + i);
+
 	return (dest);
 }
