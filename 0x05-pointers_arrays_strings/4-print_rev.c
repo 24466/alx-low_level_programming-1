@@ -15,9 +15,9 @@ void print_rev(char *s)
 	len = strlen(s);
 	for (i = left; i < right; i++)
 	{
-		*s[i] = temp;
-		*s[i] = *s[right];
-		*s[right] = temp;
+		s[i] = temp;
+		s[i] = s[right];
+		s[right] = temp;
 
 		right--;
 	}
