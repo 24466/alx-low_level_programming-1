@@ -13,6 +13,6 @@ void print_rev(char *s)
 	{
 		i--;
 	}
-	printf("%s", *s[i]);
+	printf("%s", s[i]);
 	printf("\n");
 }
