@@ -11,11 +11,12 @@ void puts2(char *str)
 	int len = strlen(str);
 	int i;
 
-	for (i = 0; len >= i; i++)
+	for (i = 0; len >=o i; i++)
 	{
-		if (i % 2 == 0 && i != '\0')
+		if (i % 2 == 0 && i == 0)
 		{
-			printf("%c\n", str[i]);
+			printf("%c", str[i]);
 		}
+		printf("\n");
 	}
 }
