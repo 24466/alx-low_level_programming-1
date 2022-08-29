@@ -1,22 +1,21 @@
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
 /**
- * puts2 - prints every other character
- * @str: string
- *
+ * puts2 - prints every other char in a string
+ * @str: input string value
  * Return: nothing
  */
-
 void puts2(char *str)
 {
-	int i = 0;
+	int len = strlen(str);
+	int i;
 
-	while (*(str + i) != '\0')
+	for (i = 0; i < len / 2; i++)
 	{
-		if (i % 2 == 0)
-			putchar(*(str + i));
-		i++;
+		if (len / 2 == 0)
+		{
+			printf("%d", str);
+		}
 	}
-	putchar(10);
 }
