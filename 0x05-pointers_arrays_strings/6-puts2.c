@@ -15,7 +15,7 @@ void puts2(char *str)
 	{
 		if (i % 2 == 0 && i != '\0')
 		{
-			_putchar(str[i]);
+			printf("%c\n", str[i]);
 		}
 	}
 }
