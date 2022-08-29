@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_rev - prints a sting in revrese and newline
  * @s: string input value
@@ -7,12 +6,16 @@
  */
 void print_rev(char *s)
 {
-	unsigned int i = 0;
+	int i;
+	char temp;
+	int len = _strlen(s);
 
-	while (i > 0)
+	for (i = 0; i < len / 2; i++)
 	{
-		i--;
+		s[i] = temp;
+		s[i] = s[len - 1 - i];
+		s[len - 1 - i] = temp;
 	}
-	printf("%s", s[i]);
+	printf("%s", s);
 	printf("\n");
 }
