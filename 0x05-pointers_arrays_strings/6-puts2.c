@@ -13,9 +13,9 @@ void puts2(char *str)
 
 	for (i = 0; i < len / 2; i++)
 	{
-		if (len / 2 == 0)
+		if (len % 2 == 0)
 		{
-			printf("%d", str);
+			printf("%s", str[i]);
 		}
 	}
 }
