@@ -9,10 +9,10 @@ void print_rev(char *s)
 {
 	unsigned int i = 0;
 
-	while (i >= 0)
+	while (i > 0)
 	{
 		i--;
 	}
-	printf("%s" s[i]);
+	printf("%s", *s[i]);
 	printf("\n");
 }
