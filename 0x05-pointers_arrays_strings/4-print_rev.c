@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+int _strlen(char *s);
 /**
  * print_rev - prints a sting in revrese and newline
  * @s: string input value
