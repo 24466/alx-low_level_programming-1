@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * _puts - prints a string followed by newline
- * @str: input sting value
+ * _puts - prints a string
+ * @str: string input value
  * Return: nothing
  */
 void _puts(char *str)
 {
-	printf("%s\n", *&str);
+	printf("%s\n", str);
 }
